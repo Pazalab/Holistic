@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+     --main-color: #f47b20;
+     --secondary-color: #52b848;
+     --font-bold: "DM Serif Display";
+     --font-regular: "Futura-Regular";
+     --font-medium: "Futura-Medium";
+}
+
+body{
+      font-family: var(--font-regular);
+      background: #fffdfc;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+     text-decoration: none;
+}
+
+img{
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+}
+
+input,
+button,
+textarea{
+      outline: none;
+      font-family: var(--font-regular);
+}
+
+h1{
+     font-size: 60px;
+     font-weight: 500;
+}
+
+
+.inner-row{
+      width: 1280px;
+      margin: auto;
+}
+
+header{
+      height: 85px;
+}
+
+.header-content{
+    display: flex;
+    padding: 5px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-content .left-nav ul{
+     display: flex;
+     align-items: center;
+     gap: 40px;
+}
+
+.header-content .left-nav ul li a{
+      display: inline-flex;
+      color: #222;
+      transition: all 0.75s ease;
+      -webkit-transition: all 0.75s ease;
+      -moz-transition: all 0.75s ease;
+      -ms-transition: all 0.75s ease;
+      -o-transition: all 0.75s ease;
+      position: relative;;
+}
+
+.header-content .left-nav ul li a::after{
+        content: "";
+        width: 0%;
+        height: 2px;
+        position: absolute;
+        bottom: -10px;
+        background: var(--secondary-color);
+        transition: all 0.75s ease;
+        -webkit-transition: all 0.75s ease;
+        -moz-transition: all 0.75s ease;
+        -ms-transition: all 0.75s ease;
+        -o-transition: all 0.75s ease;
+}
+.header-content .left-nav ul li a:hover::after,
+.header-content .left-nav ul li a.active::after{
+     width: 100%;
+}
+
+
+.header-content .logo{
+      display: flex;
+      width: 160px;
+      height: 80px;
+}
+.header-content .logo img{
+     object-fit: contain;
+     display: block;
+}
+
+.header-content .right-nav{
+      display: flex;
+      gap: 30px;
+}
+
+.header-content .right-nav p{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  letter-spacing: -1px;
+
+}
+.header-content .right-nav p span{
+     display: flex;
+     font-size: 18px;
+}
+
+.header-content .right-nav a{
+      width: 200px;
+      height: 50px;
+      display: flex;
+      background: var(--main-color);
+      color: white;
+      align-items: center;
+      justify-content: center;
+}
