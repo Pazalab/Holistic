@@ -11,6 +11,7 @@
      --secondary-color: #52b848;
      --font-bold: "DM Serif Display";
      --font-regular: "Futura-Regular";
+     --font-regular2: "Futura-Regular-2";
      --font-medium: "Futura-Medium";
 }
 
@@ -51,15 +52,25 @@ h1{
       margin: auto;
 }
 
+
+::-webkit-scrollbar {
+     width: 10px;
+}
+
+ ::-webkit-scrollbar-thumb {
+     background: #ffd6a0; 
+}
+
 header{
       height: 85px;
 }
 
 .header-content{
     display: flex;
-    padding: 5px 0;
+    padding: 5px 0 10px 0;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 1px solid rgba(220, 220, 220, 0.589);
 }
 .header-content .left-nav ul{
      display: flex;
@@ -75,7 +86,13 @@ header{
       -moz-transition: all 0.75s ease;
       -ms-transition: all 0.75s ease;
       -o-transition: all 0.75s ease;
-      position: relative;;
+      position: relative;
+      font-size: 16px;
+      font-family: var(--font-regular2);
+}
+.header-content .left-nav ul li a:hover,
+.header-content .left-nav ul li a.active{
+       color: var(--secondary-color);
 }
 
 .header-content .left-nav ul li a::after{
@@ -83,7 +100,7 @@ header{
         width: 0%;
         height: 2px;
         position: absolute;
-        bottom: -10px;
+        bottom: -8px;
         background: var(--secondary-color);
         transition: all 0.75s ease;
         -webkit-transition: all 0.75s ease;
@@ -132,4 +149,5 @@ header{
       color: white;
       align-items: center;
       justify-content: center;
+     font-family: var(--font-regular2);
 }
