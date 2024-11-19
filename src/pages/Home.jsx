@@ -1,11 +1,11 @@
-import Header from "../components/common/navigation/Header"
+import Navbar from "../components/common/navigation/Navbar"
 import HeroSection from "../components/home/HeroSection"
 import "../css/home.css"
 
 const Home = () => {
   return (
        <>
-             <Header />
+              <Navbar />
              <HeroSection />
        </>
   )

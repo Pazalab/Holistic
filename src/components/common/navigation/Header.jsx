@@ -1,7 +1,14 @@
 import { Link, NavLink } from "react-router-dom"
 import { PiPhoneCall } from "react-icons/pi";
 import logo from "../../../assets/logo.png"
+import { LuMenu } from "react-icons/lu";
+import { useContext } from "react";
+import { sidebarContext } from "./navcontext";
+
 const Header = () => {
+  // eslint-disable-next-line no-unused-vars
+  const [sidebarStatus, setSidebarStatus] = useContext(sidebarContext);
+
   return (
     <header>
               <div className="inner-row">
@@ -23,6 +30,10 @@ const Header = () => {
                                                         +254 7123 45678
                                                 </p>
                                                 <Link to={"/"}>Book Consultation</Link>
+
+                                                <span className="menu-item" onClick={() => setSidebarStatus(true)}>
+                                                            <LuMenu />
+                                                </span>
                                      </div>
                         </div>
               </div>

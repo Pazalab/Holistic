@@ -47,11 +47,11 @@
      width: 150%;
      height: 150%;
      z-index: -1;
-     transform: translateX(-100%);
-     -webkit-transform: translateX(-100%);
-     -moz-transform: translateX(-100%);
-     -ms-transform: translateX(-100%);
-     -o-transform: translateX(-100%);
+     transform: translateY(-100%);
+     -webkit-transform: translateY(-100%);
+     -moz-transform: translateY(-100%);
+     -ms-transform: translateY(-100%);
+     -o-transform: translateY(-100%);
      transition: all 1.25s ease;
      -webkit-transition: all 1.25s ease;
      -moz-transition: all 1.25s ease;
@@ -59,11 +59,11 @@
      -o-transition: all 1.25s ease;
 }
 .hero-texts a:hover span.btn-overlay{
-     transform: translateX(0);
-     -webkit-transform: translateX(0);
-     -moz-transform: translateX(0);
-     -ms-transform: translateX(0);
-     -o-transform: translateX(0);
+     transform: translateY(0);
+     -webkit-transform: translateY(0);
+     -moz-transform: translateY(0);
+     -ms-transform: translateY(0);
+     -o-transform: translateY(0);
 }
 .hero-texts a span{
     display: flex;
@@ -79,4 +79,33 @@
 
 .hero-images img{
     max-height: 550px;
+}
+
+
+@media(max-width: 1090px){
+        .hero-texts{
+               grid-template-columns: 1fr;
+               gap: 10px
+        }
+}
+
+@media(max-width: 768px){
+       .hero-texts{
+             text-align: center;
+       }
+       .hero-texts h1{
+              font-size: 50px;
+       }
+       .hero-texts a{
+             margin: auto
+       }
+}
+
+@media(max-width: 480px){
+       .hero-texts h1{
+              font-size: 36px;
+       }
+       .hero-texts p{
+            font-size: 17px;
+       }
 }

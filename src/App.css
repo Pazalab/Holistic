@@ -78,7 +78,8 @@ header{
      gap: 40px;
 }
 
-.header-content .left-nav ul li a{
+.header-content .left-nav ul li a,
+.sidebar-content ul li a{
       display: inline-flex;
       color: #222;
       transition: all 0.75s ease;
@@ -91,11 +92,14 @@ header{
       font-family: var(--font-regular2);
 }
 .header-content .left-nav ul li a:hover,
-.header-content .left-nav ul li a.active{
+.header-content .left-nav ul li a.active,
+.sidebar-content ul li a:hover,
+.sidebar-content ul li a.active{
        color: var(--secondary-color);
 }
 
-.header-content .left-nav ul li a::after{
+.header-content .left-nav ul li a::after,
+.sidebar-content ul li a::after{
         content: "";
         width: 0%;
         height: 2px;
@@ -109,7 +113,9 @@ header{
         -o-transition: all 0.75s ease;
 }
 .header-content .left-nav ul li a:hover::after,
-.header-content .left-nav ul li a.active::after{
+.header-content .left-nav ul li a.active::after,
+.sidebar-content ul li a:hover::after,
+.sidebar-content ul li a.active::after{
      width: 100%;
 }
 
@@ -127,21 +133,25 @@ header{
 .header-content .right-nav{
       display: flex;
       gap: 30px;
+      align-items: center;
 }
 
-.header-content .right-nav p{
+.header-content .right-nav p,
+.sidebar-extra p{
   display: flex;
   gap: 5px;
   align-items: center;
   letter-spacing: -1px;
 
 }
-.header-content .right-nav p span{
+.header-content .right-nav p span,
+.sidebar-extra p span{
      display: flex;
      font-size: 18px;
 }
 
-.header-content .right-nav a{
+.header-content .right-nav a,
+.sidebar-extra a{
       width: 200px;
       height: 50px;
       display: flex;
@@ -150,4 +160,120 @@ header{
       align-items: center;
       justify-content: center;
      font-family: var(--font-regular2);
+}
+.header-content .right-nav .menu-item{
+        width: 48px;
+        height: 48px;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid var(--main-color);
+        cursor: pointer;
+        font-size: 22px;
+}
+
+.sidebar-section{
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      z-index: -9;
+}
+.sidebar-section.active{
+     z-index: 99;
+}
+.sidebar-section .sidebar-overlay{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: #fff3eae9;
+      transition: all 1s ease;
+      transform: translateY(-200px);
+       clip-path: circle(200px at top left);
+}
+
+.sidebar-content{
+     width: 500px;
+     height: 100%;
+     position: absolute;
+     background: white;
+     top: 0;
+     transition: all 0.75s ease;
+     transform: translateX(-105%);
+     -webkit-transform: translateX(-105%);
+     -moz-transform: translateX(-105%);
+     -ms-transform: translateX(-105%);
+     -o-transform: translateX(-105%);
+     -webkit-transition: all 0.75s ease;
+     -moz-transition: all 0.75s ease;
+     -ms-transition: all 0.75s ease;
+     -o-transition: all 0.75s ease;
+     padding: 30px;
+}
+
+.sidebar-content .sidebar-head{
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid rgba(215, 215, 215, 0.389);
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+}
+
+.sidebar-head a{
+       display: flex;
+       width: 110px;
+}
+.sidebar-head span{
+      width: 40px;
+      height: 40px;
+      border: 2px solid var(--main-color);
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      font-size: 22px;
+      cursor: pointer;;
+}
+
+.sidebar-content ul{
+       display: flex;
+       gap: 20px;
+       flex-direction: column;
+       margin-bottom: 30px;
+}
+
+.sidebar-extra{
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+}
+
+@media(max-width: 1290px){
+     .inner-row{
+           width: 90%;
+     }
+}
+
+@media(max-width: 1090px){
+      .header-content .left-nav{
+             display: none;
+      }
+      .header-content .right-nav .menu-item{
+             display: flex;
+      }
+}
+
+@media(max-width: 768px){
+       .header-content .right-nav p,
+       .header-content .right-nav a{
+              display: none;
+       }
+}
+
+@media(max-width: 550px){
+       .sidebar-content{
+             width: 100%;
+       }
 }
