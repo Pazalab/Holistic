@@ -52,6 +52,59 @@ h1{
       margin: auto;
 }
 
+.btn-link{
+     width: 180px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 55px;
+     border: 2px solid var(--main-color);
+     gap: 5px;
+     color: #333;
+     font-size: 18px;
+     position: relative;
+     z-index: 10;
+     overflow: hidden;
+     transition: all 0.75s ease;
+     -webkit-transition: all 0.75s ease;
+     -moz-transition: all 0.75s ease;
+     -ms-transition: all 0.75s ease;
+     -o-transition: all 0.75s ease;
+}
+.btn-link:hover{
+      color: white;
+}
+
+.btn-link span.btn-overlay{
+     position: absolute;
+     background: var(--main-color);
+     width: 150%;
+     height: 150%;
+     z-index: -1;
+     transform: translateY(-100%);
+     -webkit-transform: translateY(-100%);
+     -moz-transform: translateY(-100%);
+     -ms-transform: translateY(-100%);
+     -o-transform: translateY(-100%);
+     transition: all 1.25s ease;
+     -webkit-transition: all 1.25s ease;
+     -moz-transition: all 1.25s ease;
+     -ms-transition: all 1.25s ease;
+     -o-transition: all 1.25s ease;
+}
+
+.btn-link:hover span.btn-overlay{
+     transform: translateY(0);
+     -webkit-transform: translateY(0);
+     -moz-transform: translateY(0);
+     -ms-transform: translateY(0);
+     -o-transform: translateY(0);
+}
+
+.btn-link span{
+     display: flex;
+     margin-top: 4px;
+}
 
 ::-webkit-scrollbar {
      width: 10px;
