@@ -10,7 +10,7 @@ const AboutSection = () => {
               <div className="inner-row">
                          <div className="features-content">
                                       <div className="features-intro">
-                                                 <h2>Why you Should trust us? <br /> Get to Know Us</h2>
+                                                 <h2>Why you Should trust us? <br /> Get to Know Us.</h2>
                                       </div>
                                       <div className="features-row">
                                                 { features.map(item => 
@@ -26,7 +26,7 @@ const AboutSection = () => {
                          <div className="about-content">
                                    <div className="about-texts-column">
                                                <h3>About Us</h3>
-                                               <h2>Your Journey to <span>Optimal Health</span> Starts Here</h2>
+                                               <h2>Your Journey to <span>Optimal Health</span> Starts Here.</h2>
                                                <p>HWMC (Holistic Weight Management Center) is  a premier weight management center in Kenya, dedicated to transforming lives through a holistic approach to health and wellness. Specializing in Bariatric services, personalized nutrition plans, and general wellness programs, we empower our clients to achieve sustainable, long-term health. Whether you&apos;re seeking surgical solutions or tailored lifestyle changes, our comprehensive offerings are designed to meet your unique needs, ensuring every individual receives the care and attention they deserve.</p>
 
                                                <p>With a foundation in science and a commitment to compassionate care, our expert team stands by your side at every stage of the weight management journey. From initial consultations to post-treatment support, we help you regain confidence, vitality, and balance.</p>
