@@ -151,6 +151,8 @@
      color: #222;
      font-weight: 500;
      position: relative;
+     font-size: 17px;
+     text-transform: uppercase;
 }
 .about-content h3::after{
       content: "";
@@ -217,11 +219,13 @@
 }
 
 .services-intro h3{
-      font-size: 18px;
+      font-size: 16px;
       position: relative;
+      font-weight: 500;
       display: flex;
       justify-content: center;
       margin-bottom: 20px;
+      text-transform: uppercase;
 }
 
 .services-intro h3::after{
@@ -386,12 +390,231 @@
      color: var(--main-color)
 }
 
+.process-section{
+      padding: 100px 0;
+      background: linear-gradient(rgba(0,0,0, 0.75), rgba(0,0,0,0.75)), url("../assets/processBG.webp") no-repeat;
+      background-size: cover;
+      background-position: center;
+}
+
+.process-intro h3{
+      font-size: 17px;
+      color: whitesmoke;
+      position: relative;
+      margin-bottom: 10px;
+      font-weight: 500;
+      text-transform: uppercase;
+}
+.process-intro h3::after{
+     background: var(--secondary-color);
+     content: "";
+     width: 35px;
+     height: 2px;
+     position: absolute;
+     left: 0;
+     bottom: -8px;
+}
+.process-intro h2{
+      font-size: 55px;
+      font-family: var(--font-bold);
+      color: whitesmoke;
+      font-weight: 500;
+      width: 750px;
+      line-height: 1.5;
+}
+.process-intro h2 span{
+     font-size: 60px;
+     color: var(--main-color);
+}
+
+.process-section-row{
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-top: 50px;
+}
+.process-moja{
+     width: 400px;
+     background: rgba(130, 129, 129, 0.264);
+     padding: 35px;
+}
+
+.process-moja h3{
+     font-size: 22px;
+     margin-bottom: 10px;
+     color: white;
+}
+.process-moja h3 span{
+      font-size: 30px;
+      font-weight: 500;
+}
+
+.process-moja p{
+      font-size: 18px;
+      color: gainsboro;
+      line-height: 1.5;;
+}
 
 
+.testimonials-section{
+      padding: 100px 0;
+}
+
+.testimonials-intro,
+.blog-intro{
+     width: 800px;
+     margin: auto;
+     text-align: center;
+}
+
+.testimonials-intro h3,
+.blog-intro h3{
+     text-transform: uppercase;
+     font-size: 17px;
+     font-weight: 500;
+     position: relative;
+     display: flex;
+     justify-content: center;
+}
+
+.testimonials-intro h3::after,
+.blog-intro h3::after{
+      content: "";
+      width: 50px;
+      height: 2px;
+      position: absolute;
+      bottom: -8px;
+      background-color: var(--secondary-color);
+}
+
+.testimonials-intro h2,
+.blog-intro h2{
+      font-size: 55px;
+      font-family: var(--font-bold);
+      font-weight: 500;
+      margin: 20px 0;
+}
+
+.testimonials-row{
+     display: grid;
+     grid-template-columns: 1fr 1.5fr;
+     gap: 50px;
+     margin-top: 50px;
+}
+
+.testimonials-wrapper{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: 40px;
+}
+.testimonial-moja{
+     padding: 30px;
+     background: rgb(238, 245, 238);
+}
+.testimonial-moja span{
+     color: rgb(200, 200, 200);
+}
+.testimonial-moja p{
+      line-height: 1.5;
+      margin: 10px 0;
+}
+
+.testimonial-moja h4{
+     font-family: var(--font-bold);
+     font-weight: 400;
+}
+
+.blog-section{
+     padding: 100px 0 250px 0;
+     background: rgba(244, 244, 242, 0.6);
+}
+
+.blog-section-row{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+}
+.blog-moja{
+     cursor: pointer;
+}
+
+.blog-moja .blog-image{
+      height: 350px;
+      overflow: hidden;
+}
+
+.blog-image img{
+      transition: all 0.75s ease;
+      -webkit-transition: all 0.75s ease;
+      -moz-transition: all 0.75s ease;
+      -ms-transition: all 0.75s ease;
+      -o-transition: all 0.75s ease;
+}
+.blog-moja:hover .blog-image img{
+      transform: scale(1.05);
+      -webkit-transform: scale(1.05);
+      -moz-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+      -o-transform: scale(1.05);
+}
+
+.blog-moja h3{
+     font-size: 24px;
+     line-height: 1.5;
+     margin: 10px 0;
+     transition: all 0.75s ease;
+     -webkit-transition: all 0.75s ease;
+     -moz-transition: all 0.75s ease;
+     -ms-transition: all 0.75s ease;
+     -o-transition: all 0.75s ease;
+}
+.blog-moja:hover h3{
+      color: var(--main-color)
+}
+
+.blog-moja p{
+     line-height: 1.5;
+     font-size: 18px;
+}
 
 
+.blog-section-content a{
+     margin: 40px auto 0px auto;
+     width: 250px;
+}
 
 
+.call-to-action-content{
+     display: grid;
+     grid-template-columns: 2fr 1fr;
+     background: white;
+     width: 90%;
+     margin: auto;
+     transform: translateY(-150px);
+     -webkit-transform: translateY(-150px);
+     -moz-transform: translateY(-150px);
+     -ms-transform: translateY(-150px);
+     -o-transform: translateY(-150px);
+}
+
+.call-to-action-texts{
+     padding: 40px;
+}
+
+.call-to-action-texts h3{
+     font-size: 50px;
+     font-family: var(--font-bold);
+     font-weight: 500;
+}
+.call-to-action-texts p{
+      font-size: 20px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+}
+
+.call-to-action-texts a{
+     width: 220px
+}
 
 
 
@@ -408,7 +631,8 @@
         .features-row{
            grid-template-columns: 1fr 1fr;
         }
-         .about-content{
+         .about-content,
+         .testimonials-row{
                 grid-template-columns: 1fr;
                 gap: 50px;
          }
@@ -433,11 +657,23 @@
         .services-content-row{
              grid-template-columns: 1fr;
         }
-        .services-intro{
+        .services-intro,
+        .testimonials-intro,
+        .blog-intro,
+        .call-to-action-content{
              width: 100%;
         }
         .service-call-to-action{
            display: none;
+        }
+        .process-intro h2{
+                width: 100%;
+        }
+        .process-section-row{
+               justify-content: center;
+        }
+        .testimonial-image{
+             height: 500px;
         }
 }
 
@@ -447,7 +683,8 @@
        }
        .hero-texts h1,
        .about-content h2 span,
-       .services-intro h2 span{
+       .services-intro h2 span,
+       .process-intro h2 span{
               font-size: 50px;
        }
        .hero-texts a{
@@ -455,7 +692,11 @@
        }
        .features-intro h2,
        .about-content h2,
-       .services-intro h2{
+       .services-intro h2,
+       .process-intro h2,
+       .testimonials-intro h2,
+       .blog-intro h2,
+       .call-to-action-texts h3{
               font-size: 45px;
        }
        .about-texts-images,
@@ -469,20 +710,41 @@
               max-width: auto;
               display: block;
        }
+       .process-moja{
+             width: 90%;
+       }
+       .testimonials-wrapper,
+       .blog-section-row{
+          grid-template-columns: 1fr;
+       }
+       .call-to-action-content{
+             grid-template-columns: 1fr;
+       }
+       .call-to-action-content .action-image{
+              display: none;
+       }
 }
 
 @media(max-width: 580px){
        .hero-texts h1,
        .features-intro h2,
        .about-content h2,
-       .services-intro h2{
+       .services-intro h2,
+       .process-intro h2,
+       .testimonials-intro h2,
+       .blog-intro h2,
+       .call-to-action-texts h3{
               font-size: 36px;
        }
        .about-content h2 span,
-       .services-intro h2 span{
+       .services-intro h2 span,
+       .process-intro h2 span{
             font-size: 40px;
        }
        .hero-texts p{
             font-size: 17px;
+       }
+       .testimonial-image{
+             height: 400px;
        }
 }
