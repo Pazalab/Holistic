@@ -460,6 +460,10 @@
       padding: 100px 0;
 }
 
+.testimonials-section.adjust{
+      padding: 100px 0px 250px 0;
+}
+
 .testimonials-intro,
 .blog-intro{
      width: 800px;
@@ -602,7 +606,7 @@
 }
 
 .call-to-action-texts h3{
-     font-size: 50px;
+     font-size: 45px;
      font-family: var(--font-bold);
      font-weight: 500;
 }

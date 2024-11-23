@@ -123,9 +123,105 @@
     line-height: 1.5;
 }
 
+.values-section{
+      padding: 100px 0;
+}
+
+.values-section-content h2{
+       font-size: 55px;
+       font-family: var(--font-bold);
+       font-weight: 500;
+       width: 700px;
+       margin: auto;
+       text-align: center;
+}
+
+.values-section-row{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;;
+      margin-top: 50px;
+}
+
+.value-moja{
+      display: flex;
+      gap: 10px;
+}
+
+.value-moja img{
+       width: 50px;
+       height: 50px
+}
+
+.value-moja h3{
+      font-size: 21px;
+      margin-bottom: 10px;
+}
+.value-moja p{
+      font-size: 20px;
+      color: rgb(54, 54, 54);
+      line-height: 1.5;
+}
+
+
+
+.team-section{
+      padding: 100px 0;
+      background: white;
+}
+
+.team-intro{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+}
+
+.team-intro h2{
+      font-size: 55px;
+      font-family: var(--font-bold);
+      font-weight: 500;
+}
+
+.team-intro p{
+      font-size: 20px;
+      line-height: 1.5;
+      color: rgb(54, 54, 54);
+}
+
+.team-row{
+       display: grid;
+       grid-template-columns: repeat(3, 1fr);
+       gap: 30px;
+       margin-top: 60px;
+}
+.team-moja img{
+      max-height: 420px;
+      display: block;
+}
+
+.team-moja h3{
+      font-size: 22px;
+      margin: 10px 5px;;
+}
+.team-moja h5{
+      font-size: 15px;
+      margin: 5px;
+      font-weight: 500;
+      text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
 @media(max-width: 1090px){
       .numbers-row,
-      .bottom-part-inner{
+      .bottom-part-inner,
+      .values-section-content h2{
              width: 100%;
       }
      
@@ -141,14 +237,28 @@
       .intro-texts h1{
             font-size: 50px;
       }
+
+      .team-intro{
+               grid-template-columns: 1fr;
+               gap: 10px;
+      }
+}
+
+@media(max-width: 950px){
+       .team-row{
+              grid-template-columns: 1fr 1fr;
+       }
 }
 
 @media(max-width: 768px){
-      .hero-part-content .top-part{
+      .hero-part-content .top-part,
+      .values-section-row{
              grid-template-columns: 1fr;
       }
 
-      .intro-texts h1{
+      .intro-texts h1,
+      .values-section-content h2,
+      .team-intro h2{
             font-size: 40px;
       }
 
@@ -158,13 +268,18 @@
       .about-statement-wrap .statement{
            width: 100%
       }
+      .team-row{
+              grid-template-columns: 1fr;
+      }
 }
 
 @media(max-width: 530px){
       .numbers-row{
             grid-template-columns: 1fr;
       }
-      .intro-texts h1{
+      .intro-texts h1,
+      .values-section-content h2,
+      .team-intro h2{
             font-size: 36px;
       }
       .statement h3{
@@ -172,5 +287,8 @@
       }
       .statement p{
            font-size: 18px;
+      }
+      .team-moja img{
+            max-height: 350px;
       }
 }

@@ -1,9 +1,12 @@
+import { useLocation } from "react-router-dom";
 import testimonialImg from "../../assets/testimonial.jpg"
 import { testimonials } from "../../data/testimonials"
 import { BsChatRightQuote } from "react-icons/bs";
 const TestimonialsSection = () => {
+  const { pathname } = useLocation();
+  
   return (
-    <div className="testimonials-section">
+    <div className={ pathname === "/" ? "testimonials-section" : "testimonials-section adjust"}>
                <div className="inner-row">
                           <div className="testimonials-content">
                                      <div className="testimonials-intro">
