@@ -28,7 +28,7 @@ const ServicesSection = () => {
 
                                                                     <p><span></span> Call us on: +254 7123 45678</p>
                                                                     <p className="cntr">or</p>
-                                                                    <Link to={"/"}>Get in Touch</Link>
+                                                                    <Link to={"/contact"}>Get in Touch</Link>
                                                          </div>
                                               </div>
                                               <div className="services-tab-content">

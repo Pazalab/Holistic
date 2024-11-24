@@ -31,7 +31,7 @@ const AboutSection = () => {
 
                                                <p>With a foundation in science and a commitment to compassionate care, our expert team stands by your side at every stage of the weight management journey. From initial consultations to post-treatment support, we help you regain confidence, vitality, and balance.</p>
 
-                                               <Link to={"/"} className="btn-link"><span className="btn-overlay"></span>Read More <span><HiOutlineArrowLongRight /></span></Link>
+                                               <Link to={"/about"} className="btn-link"><span className="btn-overlay"></span>Read More <span><HiOutlineArrowLongRight /></span></Link>
                                    </div>
                                    <div className="about-texts-images">
                                              <img src={about1} alt="" />

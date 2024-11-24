@@ -1,0 +1,133 @@
+.contact-body{
+     padding: 100px 0;
+}
+
+.contact-body-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;;
+}
+
+.contact-body-texts h3{
+     font-size: 15px;
+     text-transform: uppercase;
+     color: var(--secondary-color);
+}
+
+.contact-body-texts h2{
+    font-size: 55px;
+    font-family: var(--font-bold);
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.contact-body-texts p{
+    font-size: 20px;
+    line-height: 1.5;
+    color: rgb(50, 50, 50);
+}
+
+.contact-details{
+    margin-top: 30px;
+    border-top: 1px solid rgba(220, 220, 220, 0.8);
+    padding-top: 30px;
+    width: 90%;
+}
+
+.detail-box{
+    padding: 30px;
+    display: flex;
+    background: rgba(218, 212, 194, 0.2);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.detail-box span{
+     font-size: 25px;
+     color: rgb(113, 113, 113);
+}
+.detail-box h4{
+     font-size: 21px;
+     color: #333;
+}
+.detail-box p{
+    font-size: 19px;
+    margin-top: 5px;
+}
+
+.contact-form{
+    background: rgba(241, 242, 241, 0.384);
+    padding: 50px;
+}
+.form-row{
+    margin-bottom: 20px;
+}
+.form-row label{
+    display: block;
+    margin-bottom: 5px;
+}
+.form-row label span{
+    color: red;
+}
+.form-control{
+     width: 100%;
+     height: 55px;
+     padding-left: 10px;
+     font-size: 16px;
+     background: white;
+     border: 1px solid rgba(220, 220, 220, 0.592);
+     outline: none;
+}
+.text-control{
+    width: 100%;
+    height: 175px;
+    padding: 10px;
+    font-size: 16px;
+    background: white;
+    border: 1px solid rgba(220, 220, 220, 0.592);
+    outline: none;
+}
+
+.btn-submit{
+      width: 180px;
+      height: 55px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--main-color);
+      border: none;
+      color: whitesmoke;
+      font-size: 18px;
+      cursor: pointer;
+      transition: all 0.8s ease;
+      -webkit-transition: all 0.8s ease;
+      -moz-transition: all 0.8s ease;
+      -ms-transition: all 0.8s ease;
+      -o-transition: all 0.8s ease;
+}
+.btn-submit:hover{
+    background-color: rgb(252, 150, 49);
+}
+
+@media(max-width: 1090px){
+     .contact-body-content{
+            grid-template-columns: 1fr;
+     }
+     .contact-details{
+         width: 100%;
+     }
+}
+
+@media(max-width: 768px){
+     .contact-body-texts h2{
+          font-size: 45px;
+     }
+}
+
+@media(max-width: 530px){
+      .contact-body-texts h2{
+           font-size: 36px;
+      }
+      .contact-form{
+           padding: 50px 30px;
+      }
+}

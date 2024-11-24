@@ -11,7 +11,7 @@ const HeroSection = () => {
                                                <h1>Guiding You to Master Your Weight and Redefine Your Life.</h1>
                                                <div className="hero-texts-deep">
                                                           <p>We&apos;re dedicated to helping you achieve your health goals. Our comprehensive range of services, from surgical and non-surgical weight loss procedures to personalized nutrition counseling, empowers you to embark on a transformative journey towards a healthier, happier you.</p>
-                                                          <Link to={"/"}> <span className="btn-overlay"></span>Explore <span><HiOutlineArrowLongRight /></span></Link>
+                                                          <Link to={"/services"}> <span className="btn-overlay"></span>Explore <span><HiOutlineArrowLongRight /></span></Link>
                                                </div>
                                     </div>
 

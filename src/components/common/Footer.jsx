@@ -1,12 +1,14 @@
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 import logo from "../../assets/logo.png"
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaXTwitter } from "react-icons/fa6"
 import CallToAction from "./CallToAction"
 const Footer = () => {
+  const { pathname } = useLocation();
   return (
-    <footer>
+    <footer className={ pathname === "/contact" ? "adjust" : ""}>
              <div className="inner-row">
-                       <CallToAction />
+                       { pathname === "/contact" ? "" : <CallToAction /> }
+                       
                       <div className="footer-content">
                                   <div className="footer-column texts">
                                               <div className="footer-logo">
@@ -21,11 +23,11 @@ const Footer = () => {
                                               <div className="wrap-column">
                                                         <h3>Quick Links</h3>
                                                          <ul>
-                                                                  <li><Link to={""}>Home</Link></li>
-                                                                  <li><Link to={""}>About</Link></li>
-                                                                  <li><Link to={""}>Services</Link></li>
-                                                                  <li><Link to={""}>Insights</Link></li>
-                                                                  <li><Link to={""}>Contact</Link></li>
+                                                                  <li><Link to={"/"}>Home</Link></li>
+                                                                  <li><Link to={"/about"}>About</Link></li>
+                                                                  <li><Link to={"/services"}>Services</Link></li>
+                                                                  <li><Link to={"/"}>Insights</Link></li>
+                                                                  <li><Link to={"/contact"}>Contact</Link></li>
                                                          </ul>
                                               </div>
                                               <div className="wrap-column">
