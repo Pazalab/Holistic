@@ -603,12 +603,14 @@
 
 .call-to-action-texts{
      padding: 40px;
+     border: 1px solid rgba(220, 220, 220, 0.236);
 }
 
 .call-to-action-texts h3{
-     font-size: 45px;
+     font-size: 40px;
      font-family: var(--font-bold);
      font-weight: 500;
+     margin-bottom: 10px;
 }
 .call-to-action-texts p{
       font-size: 20px;
