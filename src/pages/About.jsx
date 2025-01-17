@@ -1,6 +1,6 @@
 import AboutHero from "../components/about/AboutHero"
 import AboutStatement from "../components/about/AboutStatement"
-import TeamSection from "../components/about/TeamSection"
+//import TeamSection from "../components/about/TeamSection"
 import ValuesSection from "../components/about/ValuesSection"
 import Footer from "../components/common/Footer"
 import Navbar from "../components/common/navigation/Navbar"
@@ -14,7 +14,7 @@ const About = () => {
             <AboutHero />
             <AboutStatement />
             <ValuesSection />
-            <TeamSection />
+            {/* <TeamSection /> */}
             <TestimonialsSection />
             <Footer />
     </>

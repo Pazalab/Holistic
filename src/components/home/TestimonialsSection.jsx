@@ -1,5 +1,5 @@
 import { useLocation } from "react-router-dom";
-import testimonialImg from "../../assets/testimonial.jpg"
+import testimonialImg from "../../assets/testimonial2.jpg"
 import { testimonials } from "../../data/testimonials"
 import { BsChatRightQuote } from "react-icons/bs";
 const TestimonialsSection = () => {
