@@ -27,9 +27,9 @@ const Header = () => {
                                      <div className="right-nav">
                                                 <p>
                                                         <span><PiPhoneCall /></span>
-                                                        +254 7123 45678
+                                                        +254 756 484593
                                                 </p>
-                                                <Link to={"/"}>Book Consultation</Link>
+                                                <Link to={"/contact"}>Book Consultation</Link>
 
                                                 <span className="menu-item" onClick={() => setSidebarStatus(true)}>
                                                             <LuMenu />

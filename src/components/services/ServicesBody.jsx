@@ -1,10 +1,11 @@
 import { useState } from "react"
 import { services } from "../../data/services"
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { GoArrowRight } from "react-icons/go";
 
 const ServicesBody = () => {
     const [active, setActive] = useState("All")
+    const navigate = useNavigate();
   return (
     <div className="services-body">
                 <div className="inner-row">
@@ -21,14 +22,14 @@ const ServicesBody = () => {
                                              { active === "All" ?
                                                    <div className="tab-container">
                                                          { services.map(kitu =>
-                                                                  <div className="service-moja" key={kitu.id}>
+                                                                  <div className="service-moja" key={kitu.id} onClick={() => navigate(kitu.link)}>
                                                                              <img src={kitu.image} alt="" />
                                                                              <div className="service-texts">
                                                                                        <div className="texts-column">
                                                                                                 <h4>{kitu.title}</h4>
                                                                                                 <p>{kitu.short_desc}</p>
                                                                                           </div>
-                                                                                          <Link to={"/"}>Read More<span><GoArrowRight /></span></Link>
+                                                                                          <Link to={kitu.link}>Read More<span><GoArrowRight /></span></Link>
                                                                                 </div>
                                                                   </div>
                                                              )}
@@ -37,14 +38,14 @@ const ServicesBody = () => {
                                                    active === "Non Surgical Options" ?
                                                    <div className="tab-container">
                                                             { services.filter(item => item.category === "Non Surgical Options").map(kitu =>
-                                                                  <div className="service-moja" key={kitu.id}>
+                                                                  <div className="service-moja" key={kitu.id} onClick={() => navigate(kitu.link)}>
                                                                              <img src={kitu.image} alt="" />
                                                                              <div className="service-texts">
                                                                                        <div className="texts-column">
                                                                                                 <h4>{kitu.title}</h4>
                                                                                                 <p>{kitu.short_desc}</p>
                                                                                           </div>
-                                                                                          <Link to={"/"}>Read More<span><GoArrowRight /></span></Link>
+                                                                                          <Link to={kitu.link}>Read More<span><GoArrowRight /></span></Link>
                                                                                 </div>
                                                                   </div>
                                                              )}
@@ -59,7 +60,7 @@ const ServicesBody = () => {
                                                                                                   <h4>{kitu.title}</h4>
                                                                                                   <p>{kitu.short_desc}</p>
                                                                                          </div>
-                                                                                         <Link to={"/"}>Read More<span><GoArrowRight /></span></Link>
+                                                                                         <Link to={kitu.link}>Read More<span><GoArrowRight /></span></Link>
                                                                                 </div>
                                                                      </div>
                                                                )}

@@ -1,12 +1,14 @@
 import { useState } from "react";
 import { services } from "../../data/services"
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { GoArrowRight } from "react-icons/go";
 
 const ServicesSection = () => {
     const [ active, setActive ] = useState("Non Surgical Options");
     const raw_tabs = services.map(item => item.category);
     const tabs = [...new Set(raw_tabs)]
+
+    const navigate = useNavigate();
   return (
     <div className="services-section">
                <div className="inner-row">
@@ -26,7 +28,7 @@ const ServicesSection = () => {
                                                          <div className="service-call-to-action">
                                                                     <h3>Ready to embark on your weight management journey?</h3>
 
-                                                                    <p><span></span> Call us on: +254 7123 45678</p>
+                                                                    <p><span></span> Call us on: +254 756 484593</p>
                                                                     <p className="cntr">or</p>
                                                                     <Link to={"/contact"}>Get in Touch</Link>
                                                          </div>
@@ -35,14 +37,14 @@ const ServicesSection = () => {
                                                          { active === "Non Surgical Options" ?
                                                                <div className="tab-container">
                                                                          { services.filter(item => item.category === "Non Surgical Options").map(kitu =>
-                                                                                <div className="service-moja" key={kitu.id}>
+                                                                                <div className="service-moja" onClick={() => navigate(kitu.link)} key={kitu.id}>
                                                                                            <img src={kitu.image} alt="" />
                                                                                            <div className="service-texts">
                                                                                                      <div className="texts-column">
                                                                                                               <h4>{kitu.title}</h4>
                                                                                                               <p>{kitu.short_desc}</p>
                                                                                                      </div>
-                                                                                                     <Link to={"/"}>Read More<span><GoArrowRight /></span></Link>
+                                                                                                     <Link to={kitu.link}>Read More<span><GoArrowRight /></span></Link>
                                                                                            </div>
                                                                                 </div>
                                                                          )}
@@ -50,14 +52,14 @@ const ServicesSection = () => {
                                                            :
                                                                 <div className="tab-container">
                                                                          { services.filter(item => item.category === "Surgical Options").map(kitu =>
-                                                                                <div className="service-moja" key={kitu.id}>
+                                                                                <div className="service-moja" onClick={() => kitu.link} key={kitu.id}>
                                                                                            <img src={kitu.image} alt="" />
                                                                                            <div className="service-texts">
                                                                                                      <div className="texts-column">
                                                                                                               <h4>{kitu.title}</h4>
                                                                                                               <p>{kitu.short_desc}</p>
                                                                                                      </div>
-                                                                                                     <Link to={"/"}>Read More<span><GoArrowRight /></span></Link>
+                                                                                                     <Link to={kitu.link}>Read More<span><GoArrowRight /></span></Link>
                                                                                            </div>
                                                                                 </div>
                                                                          )}

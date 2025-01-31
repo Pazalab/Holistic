@@ -9,7 +9,7 @@ const FaqsSection = () => {
                         <div className="faqs-section-content">
                                     <div className="faqs-intro">
                                                <h2>You&apos;ve got questions?,<br />We&apos;ve got answers!</h2>
-                                               <p>Everything you need to know about us and what we do. Still have more questions? <Link to={"/"}>Please chat with our team.</Link></p>
+                                               <p>Everything you need to know about us and what we do. Still have more questions? <Link to={"/contact"}>Please chat with our team.</Link></p>
                                     </div>
                                     <div className="faqs-body-row">
                                              { faqs.map(item => 

@@ -6,7 +6,7 @@ const TestimonialsSection = () => {
   const { pathname } = useLocation();
   
   return (
-    <div className={ pathname === "/" ? "testimonials-section" : "testimonials-section adjust"}>
+    <div className={ pathname === "/" ? "testimonials-section adjust" : "testimonials-section adjust"}>
                <div className="inner-row">
                           <div className="testimonials-content">
                                      <div className="testimonials-intro">

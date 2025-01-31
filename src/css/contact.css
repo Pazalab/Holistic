@@ -57,6 +57,7 @@
 .contact-form{
     background: rgba(241, 242, 241, 0.384);
     padding: 50px;
+    position: relative;
 }
 .form-row{
     margin-bottom: 20px;
@@ -108,6 +109,19 @@
     background-color: rgb(252, 150, 49);
 }
 
+span.error{
+    font-size: 13px;
+    color: red;;
+}
+.server-msg{
+      font-size: 16px;
+      margin-top: 10px;
+      color: var(--main-color);
+}
+.honeypot{
+      position: absolute;
+      opacity: 0;;
+}
 @media(max-width: 1090px){
      .contact-body-content{
             grid-template-columns: 1fr;

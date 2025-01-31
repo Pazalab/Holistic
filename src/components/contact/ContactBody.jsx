@@ -18,21 +18,21 @@ const ContactBody = () => {
                                                                       <span><BsEnvelope /></span>
                                                                       <div className="detail-inner">
                                                                                 <h4>Send us mail</h4>
-                                                                                <p>support@holisticweightmgmt.com</p>
+                                                                                <p>hello@hwmckenya.com</p>
                                                                       </div>
                                                             </div>
                                                             <div className="detail-box">
                                                                       <span><LuPhoneCall /></span>
                                                                       <div className="detail-inner">
                                                                                 <h4>Give us a call</h4>
-                                                                                <p>+254 7123 45678</p>
+                                                                                <p>+254 756 484593</p>
                                                                       </div>
                                                             </div>
                                                             <div className="detail-box">
                                                                       <span><IoLocationOutline /></span>
                                                                       <div className="detail-inner">
                                                                                 <h4>Visit our offices</h4>
-                                                                                <p>support@holisticweightmgmt.com</p>
+                                                                                <p>Luton Hospital, 3rd Floor, Ngong Road - Nairobi</p>
                                                                       </div>
                                                             </div>
                                                 </div>

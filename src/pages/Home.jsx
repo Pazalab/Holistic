@@ -1,7 +1,7 @@
 import Footer from "../components/common/Footer"
 import Navbar from "../components/common/navigation/Navbar"
 import AboutSection from "../components/home/AboutSection"
-import BlogSection from "../components/home/BlogSection"
+//import BlogSection from "../components/home/BlogSection"
 import HeroSection from "../components/home/HeroSection"
 import ProcessSection from "../components/home/ProcessSection"
 import ServicesSection from "../components/home/ServicesSection"
@@ -17,7 +17,7 @@ const Home = () => {
              <ServicesSection />
              <ProcessSection />
              <TestimonialsSection />
-             <BlogSection />
+             {/* <BlogSection /> */}
              <Footer />
        </>
   )

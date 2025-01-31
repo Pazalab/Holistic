@@ -61,8 +61,8 @@ const Sidebar = () => {
                          </ul>
 
                          <div className="sidebar-extra">
-                                  <p><span><PiPhoneCall /></span> +254 7123 45678</p>
-                                  <Link to={"/"}>Book Consultation</Link>
+                                  <p><span><PiPhoneCall /></span> +254 756 484593</p>
+                                  <Link to={"/contact"}>Book Consultation</Link>
                          </div>
               </div>
     </div>
